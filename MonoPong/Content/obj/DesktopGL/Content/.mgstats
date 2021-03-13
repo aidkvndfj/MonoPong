@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Eric/source/repos/MonoPong/MonoPong/Content/ball.png","C:/Users/Eric/source/repos/MonoPong/MonoPong/Content/bin/DesktopGL/Content/ball.xnb","TextureProcessor","Texture2DContent",8368,16469,0.1721275
+"C:/Users/Eric/source/repos/MonoPong/MonoPong/Content/paddle.png","C:/Users/Eric/source/repos/MonoPong/MonoPong/Content/bin/DesktopGL/Content/paddle.xnb","TextureProcessor","Texture2DContent",1387,10085,0.1953458
+"C:/Users/Eric/source/repos/MonoPong/MonoPong/Content/Score.spritefont","C:/Users/Eric/source/repos/MonoPong/MonoPong/Content/bin/DesktopGL/Content/Score.xnb","FontDescriptionProcessor","SpriteFontContent",1962,21538,0.3163466

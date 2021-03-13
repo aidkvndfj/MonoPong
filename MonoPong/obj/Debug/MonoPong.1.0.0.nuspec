@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MonoPong</id>
+    <version>1.0.0</version>
+    <authors>MonoPong</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="MonoGame.Content.Builder.Task" version="3.8.0.1641" exclude="Build,Analyzers" />
+        <dependency id="MonoGame.Framework.DesktopGL" version="3.8.0.1641" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp3.1/Content/bin/DesktopGL/Content/ball.xnb" buildAction="Content" />
+      <files include="any/netcoreapp3.1/Content/bin/DesktopGL/Content/paddle.xnb" buildAction="Content" />
+      <files include="any/netcoreapp3.1/Content/bin/DesktopGL/Content/Score.xnb" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Eric\source\repos\MonoPong\MonoPong\bin\Debug\netcoreapp3.1\MonoPong.runtimeconfig.json" target="lib\netcoreapp3.1\MonoPong.runtimeconfig.json" />
+    <file src="C:\Users\Eric\source\repos\MonoPong\MonoPong\bin\Debug\netcoreapp3.1\MonoPong.dll" target="lib\netcoreapp3.1\MonoPong.dll" />
+    <file src="C:\Users\Eric\source\repos\MonoPong\MonoPong\Content\bin\DesktopGL\Content\ball.xnb" target="content\Content\bin\DesktopGL\Content\ball.xnb" />
+    <file src="C:\Users\Eric\source\repos\MonoPong\MonoPong\Content\bin\DesktopGL\Content\ball.xnb" target="contentFiles\any\netcoreapp3.1\Content\bin\DesktopGL\Content\ball.xnb" />
+    <file src="C:\Users\Eric\source\repos\MonoPong\MonoPong\Content\bin\DesktopGL\Content\paddle.xnb" target="content\Content\bin\DesktopGL\Content\paddle.xnb" />
+    <file src="C:\Users\Eric\source\repos\MonoPong\MonoPong\Content\bin\DesktopGL\Content\paddle.xnb" target="contentFiles\any\netcoreapp3.1\Content\bin\DesktopGL\Content\paddle.xnb" />
+    <file src="C:\Users\Eric\source\repos\MonoPong\MonoPong\Content\bin\DesktopGL\Content\Score.xnb" target="content\Content\bin\DesktopGL\Content\Score.xnb" />
+    <file src="C:\Users\Eric\source\repos\MonoPong\MonoPong\Content\bin\DesktopGL\Content\Score.xnb" target="contentFiles\any\netcoreapp3.1\Content\bin\DesktopGL\Content\Score.xnb" />
+  </files>
+</package>
