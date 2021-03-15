@@ -10,8 +10,13 @@ namespace MonoPong {
         private Texture2D paddleTexture;
         private Texture2D ballTexture;
         private SpriteFont scoreFont;
-        private Paddle player1;
-        private Paddle player2;
+
+        //private Paddle player1;
+        //private Paddle player2;
+
+        private HumanPlayer player1;
+        private AIPlayer player2;
+
         private Ball ball;
 
         private int player1Score = 0;
@@ -42,9 +47,12 @@ namespace MonoPong {
             ballTexture = Content.Load<Texture2D>("ball");
             scoreFont = Content.Load<SpriteFont>("Score");
 
-            player1 = new Paddle(paddleTexture, new Vector2(50, _graphics.PreferredBackBufferHeight / 2), _graphics, false);
-            player2 = new Paddle(paddleTexture, new Vector2(_graphics.PreferredBackBufferWidth - 50 - paddleTexture.Width, _graphics.PreferredBackBufferHeight / 2), _graphics, true);
+            // Initalize ball first becauase we refernce it in player2
             ball = new Ball(ballTexture, new Vector2(_graphics.PreferredBackBufferWidth / 2, _graphics.PreferredBackBufferHeight / 2), _graphics);
+
+            player1 = new HumanPlayer(paddleTexture, new Vector2(50, _graphics.PreferredBackBufferHeight / 2), _graphics);
+            player2 = new AIPlayer(paddleTexture, new Vector2(_graphics.PreferredBackBufferWidth - 50 - paddleTexture.Width, _graphics.PreferredBackBufferHeight / 2), _graphics, ball);
+
         }
 
         protected override void Update(GameTime gameTime) {
@@ -53,9 +61,9 @@ namespace MonoPong {
 
             // TODO: Add your update logic here
             player1.Update(gameTime);
-            player2.Update(gameTime, ball.GetYPos());
+            player2.Update(gameTime);
             //player2.Update(gameTime);
-            ball.Update(gameTime, player1.GetRact(), player2.GetRact());
+            ball.Update(gameTime, player1.GetRect(), player2.GetRect());
 
             if (ball.OutOfBounds() == 1) {
                 player2Score += 1;

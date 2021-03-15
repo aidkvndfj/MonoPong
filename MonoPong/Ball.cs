@@ -25,11 +25,11 @@ namespace MonoPong {
             graphics = _graphics;
             ballTexture = texture;
 
-            speed = 7f;
+            speed = 700f;
 
             random = new Random();
             ballRect = new Rectangle((int)initialPos.X, (int)initialPos.Y, 20, 20);
-            velocity = new Vector2(speed, speed);
+            velocity = new Vector2(7, 7);
         }
 
         public void Update(GameTime gameTime, Rectangle paddle1, Rectangle paddle2) {
@@ -41,16 +41,17 @@ namespace MonoPong {
 
             if (ballRect.Intersects(paddle1) || ballRect.Intersects(paddle2)) {
                 velocity.X *= -1;
+
                 velocity.Y += random.Next(-3, 3);
                 if (velocity.Y < 3 && velocity.Y > 0)
-                    velocity.Y = speed;
+                    velocity.Y = (float)(speed * gameTime.ElapsedGameTime.TotalSeconds);
                 if (velocity.Y > -3 && velocity.Y <= 0)
-                    velocity.Y = -speed;
+                    velocity.Y = -(float)(speed * gameTime.ElapsedGameTime.TotalSeconds);
 
                 if (velocity.Y > 10)
-                    velocity.Y = speed;
+                    velocity.Y = (float)(speed * gameTime.ElapsedGameTime.TotalSeconds);
                 if (velocity.Y < -10)
-                    velocity.Y = -speed;
+                    velocity.Y = -(float)(speed * gameTime.ElapsedGameTime.TotalSeconds);
             }
 
             ballRect.Y += (int)velocity.Y;

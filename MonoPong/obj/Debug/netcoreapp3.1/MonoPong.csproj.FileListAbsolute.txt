@@ -24,3 +24,7 @@ C:\Users\Eric\source\repos\MonoPong\MonoPong\obj\Debug\netcoreapp3.1\MonoPong.pd
 C:\Users\Eric\source\repos\MonoPong\MonoPong\obj\Debug\netcoreapp3.1\MonoPong.genruntimeconfig.cache
 C:\Users\Eric\source\repos\MonoPong\MonoPong\bin\Debug\netcoreapp3.1\Content\ball.xnb
 C:\Users\Eric\source\repos\MonoPong\MonoPong\bin\Debug\netcoreapp3.1\Content\Score.xnb
+C:\Users\Eric\source\repos\MonoPong\MonoPong\bin\Debug\netcoreapp3.1\MonoGame.Extended.dll
+C:\Users\Eric\source\repos\MonoPong\MonoPong\bin\Debug\netcoreapp3.1\MonoGame.Extended.Gui.dll
+C:\Users\Eric\source\repos\MonoPong\MonoPong\bin\Debug\netcoreapp3.1\MonoGame.Extended.Input.dll
+C:\Users\Eric\source\repos\MonoPong\MonoPong\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

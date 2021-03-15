@@ -9,6 +9,8 @@
       "MonoPong/1.0.0": {
         "dependencies": {
           "MonoGame.Content.Builder.Task": "3.8.0.1641",
+          "MonoGame.Extended": "3.8.0",
+          "MonoGame.Extended.Gui": "3.8.0",
           "MonoGame.Framework.DesktopGL": "3.8.0.1641"
         },
         "runtime": {
@@ -16,6 +18,40 @@
         }
       },
       "MonoGame.Content.Builder.Task/3.8.0.1641": {},
+      "MonoGame.Extended/3.8.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MonoGame.Extended.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MonoGame.Extended.Gui/3.8.0": {
+        "dependencies": {
+          "MonoGame.Extended": "3.8.0",
+          "MonoGame.Extended.Input": "3.8.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MonoGame.Extended.Gui.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MonoGame.Extended.Input/3.8.0": {
+        "dependencies": {
+          "MonoGame.Extended": "3.8.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MonoGame.Extended.Input.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "MonoGame.Framework.DesktopGL/3.8.0.1641": {
         "runtime": {
           "lib/netstandard2.0/MonoGame.Framework.dll": {
@@ -65,6 +101,14 @@
             "fileVersion": "0.0.0.0"
           }
         }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
       }
     }
   },
@@ -81,12 +125,40 @@
       "path": "monogame.content.builder.task/3.8.0.1641",
       "hashPath": "monogame.content.builder.task.3.8.0.1641.nupkg.sha512"
     },
+    "MonoGame.Extended/3.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FDPoUOFtslGNHCWSqjKD0C67RYN6Stb6NWnn+rkCmtkPBZlE6LvwuGyQBkHUkAMANO3LzO/Wsz9etMhwZLInqg==",
+      "path": "monogame.extended/3.8.0",
+      "hashPath": "monogame.extended.3.8.0.nupkg.sha512"
+    },
+    "MonoGame.Extended.Gui/3.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q40QIqEsmX3+tpLqENswMRIQ1FBf/3llJDGk3zTStdb2ejs4LGYWNeBIEbGqj3anfecT4qgNnJKCIaL61Cmx7A==",
+      "path": "monogame.extended.gui/3.8.0",
+      "hashPath": "monogame.extended.gui.3.8.0.nupkg.sha512"
+    },
+    "MonoGame.Extended.Input/3.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-90RtzI6N+RCGHolI/yTwGT47vqSyr+IEe+yKxzm4/euc8rDVnbAwz4lRifkAEdHx29X3apD0Ui5ve0C/7yO7wQ==",
+      "path": "monogame.extended.input/3.8.0",
+      "hashPath": "monogame.extended.input.3.8.0.nupkg.sha512"
+    },
     "MonoGame.Framework.DesktopGL/3.8.0.1641": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-rJQlrlHQbnOECYV6EcQ8GlGRQ2lzPTroXQcyyOZ0ki+BQRSJEN2zVBm9skqLiXya348aGAfTSSGTaSKjAy9NaA==",
       "path": "monogame.framework.desktopgl/3.8.0.1641",
       "hashPath": "monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     }
   }
 }

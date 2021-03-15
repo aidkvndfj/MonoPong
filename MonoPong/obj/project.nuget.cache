@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "+xAW2JHp6x7aN9GJNeVSok4toP+U2W17abxhznss2es8pBWetlktEBHgyaywM6u6MjjK1qnYD3kYYsAaksc2+w==",
+  "dgSpecHash": "p9veQnR1jg625jf4l7y9Mxk9geJg4N8/IPf6KnHdX3FFntzwGO5U4Fb5cula0rJdvpOtowAOhAedxJVkyBnuQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eric\\source\\repos\\MonoPong\\MonoPong\\MonoPong.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eric\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
-    "C:\\Users\\Eric\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+    "C:\\Users\\Eric\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
+    "C:\\Users\\Eric\\.nuget\\packages\\monogame.extended.gui\\3.8.0\\monogame.extended.gui.3.8.0.nupkg.sha512",
+    "C:\\Users\\Eric\\.nuget\\packages\\monogame.extended.input\\3.8.0\\monogame.extended.input.3.8.0.nupkg.sha512",
+    "C:\\Users\\Eric\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\Eric\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }
